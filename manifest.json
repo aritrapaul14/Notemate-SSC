@@ -1,4 +1,5 @@
-amilyname": "NoteMate SSC by APR",
+{
+  "name": "NoteMate SSC by APR",
   "short_name": "NoteMate SSC",
   "start_url": "./",
   "display": "standalone",
@@ -8,7 +9,8 @@ amilyname": "NoteMate SSC by APR",
     {
       "src": "./icon.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
