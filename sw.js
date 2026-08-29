@@ -1,4 +1,4 @@
-const CACHE_NAME = "notemate-ssc-v1";
+const CACHE_NAME = "notemate-ssc-v2";
 
 self.addEventListener("install", event => {
   event.waitUntil(
@@ -6,8 +6,21 @@ self.addEventListener("install", event => {
       return cache.addAll([
         "./",
         "./index.html",
-        "./manifest.json"
+        "./manifest.json",
+        "./icon.png"
       ]);
+    })
+  );
+});
+
+self.addEventListener("activate", event => {
+  event.waitUntil(
+    caches.keys().then(keys => {
+      return Promise.all(
+        keys
+          .filter(key => key !== CACHE_NAME)
+          .map(key => caches.delete(key))
+      );
     })
   );
 });
