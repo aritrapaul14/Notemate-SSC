@@ -1,5 +1,4 @@
-{
-  "name": "NoteMate SSC by APR",
+amilyname": "NoteMate SSC by APR",
   "short_name": "NoteMate SSC",
   "start_url": "./",
   "display": "standalone",
@@ -7,15 +6,9 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "./icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "./icon-512.png",
+      "src": "./icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ]
 }
-  
